@@ -15,9 +15,11 @@ print (dictionary_of_Alex)
 dictionary_of_Alex.pop( 'favourite food')
 print (dictionary_of_Alex)
 favourites = dictionary_of_Alex.copy()
-print (favourites)
+favourites = {
+  'favourite colour': 'aqua',
+  'favourite animal': 'whale shark',
+  'favourite hobby': 'ocean swimming',
+  'favourite movie': 'Castaway',
+}
 for key, value in favourites.items():
-  print (key, value)
-user = ['Alex']
-user_info = {'first name': 'Alex', 'favourites list': favourites}
-print (user_info)
+  print(f"My {key} is {value}.")
